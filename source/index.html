@@ -10,20 +10,59 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">
+  <div class="overlay hidden" data-overlay></div>
+  <header class="header" data-header>
+    <div class="header__wrapper">
+      <button class="header__button" data-nav="button">
+        <svg class="header__menu" width="26" height="26">
+          <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        <svg class="header__close" width="20" height="20">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <a class="header__logo" href="index.html" data-logo>
+        <svg width="205" height="62">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="nav" data-nav="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#tours">Туры</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#study">Обучение</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__phone" href="tel:+78007253232" data-header-phone>8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+    </div>
   </header>
 
   <main>
     <section class="hero"></section>
-    <section class="tours"></section>
-    <section class="study"></section>
+    <section class="tours" id="tours"></section>
+    <section class="study" id="study"></section>
     <section class="process"></section>
-    <section class="about"></section>
-    <section class="reviews"></section>
+    <section class="about" id="about"></section>
+    <section class="reviews" id="reviews"></section>
     <section class="advantages"></section>
-    <section class="gallery"></section>
+    <section class="gallery" id="gallery"></section>
     <section class="consult"></section>
-    <section class="contacts"></section>
+    <section class="contacts" id="contacts"></section>
     <section class="footer"></section>
   </main>
 

@@ -6,7 +6,7 @@
 
 @mixin hover-focus {
   &:hover,
-  &:focus {
+  &:focus-visible {
     @content;
   }
 }
@@ -15,6 +15,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin header-items-states {
+  @include hover-focus {
+    outline: none;
+    color: #1c3374;
+
+    svg {
+      fill: #1c3374;
+    }
+  }
+
+  &:active {
+    color: #0266c1;
+
+    svg {
+      fill: #0266c1;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+@mixin menu-items-states($color) {
+  border: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $color;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $color;
+  }
+
+  &:active {
+    border: 1px solid transparent;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 // Desktop first
