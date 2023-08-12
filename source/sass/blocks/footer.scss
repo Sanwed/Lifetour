@@ -1,0 +1,100 @@
+.footer {
+  padding: 30px 120px;
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+
+  @include vp-1199 {
+    padding: 45px;
+  }
+
+  @include vp-767 {
+    padding: 30px 20px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 14px;
+
+  @include vp-1199 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    display: block;
+    margin-bottom: 22px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 205px;
+  height: 62px;
+
+  @include header-items-states;
+
+  svg {
+    fill: $color-elephant;
+  }
+
+  @include vp-1199 {
+    width: 118px;
+    height: 34px;
+
+    svg {
+      width: 118px;
+      height: 34px;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
+}
+
+.footer__nav {
+  margin-right: 65px;
+
+  @include vp-1199 {
+    margin: 0;
+  }
+}
+
+.footer__phone {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: $color-elephant;
+
+  @include header-items-states;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.footer__social {
+  margin: 0 auto 18px;
+
+  @include vp-767 {
+    margin: 0 0 18px;
+  }
+}
+
+.footer__link {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  font-size: 12px;
+  color: $color-elephant;
+  font-weight: 300;
+  line-height: 12px;
+
+  @include menu-items-states($color-elephant);
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
