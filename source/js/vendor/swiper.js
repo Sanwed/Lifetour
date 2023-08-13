@@ -1,7 +1,7 @@
 const swiper = () => {
   /**
    * Swiper 7.4.1
-   * Most modern mobile touch slider and framework with hardware accelerated transitions
+   * Most modern mobile touch sliders and framework with hardware accelerated transitions
    * https://swiperjs.com
    *
    * Copyright 2014-2021 Vladimir Kharlampidi
@@ -5319,22 +5319,22 @@ const swiper = () => {
           // Prevent if time between scrolls is below configured threshold
           return false;
         } // If the movement is NOT big enough and
-        // if the last time the user scrolled was too close to the current one (avoid continuously triggering the slider):
+        // if the last time the user scrolled was too close to the current one (avoid continuously triggering the sliders):
         //   Don't go any further (avoid insignificant scroll movement).
 
         if (newEvent.delta >= 6 && now() - lastScrollTime < 60) {
           // Return false as a default
           return true;
         } // If user is scrolling towards the end:
-        //   If the slider hasn't hit the latest slide or
-        //   if the slider is a loop and
-        //   if the slider isn't moving right now:
+        //   If the sliders hasn't hit the latest slide or
+        //   if the sliders is a loop and
+        //   if the sliders isn't moving right now:
         //     Go to next slide and
         //     emit a scroll event.
         // Else (the user is scrolling towards the beginning) and
-        // if the slider hasn't hit the first slide or
-        // if the slider is a loop and
-        // if the slider isn't moving right now:
+        // if the sliders hasn't hit the first slide or
+        // if the sliders is a loop and
+        // if the sliders isn't moving right now:
         //   Go to prev slide and
         //   emit a scroll event.
 
@@ -5437,9 +5437,9 @@ const swiper = () => {
           recentWheelEvents.push(newEvent); // If there is at least one previous recorded event:
           //   If direction has changed or
           //   if the scroll is quicker than the previous one:
-          //     Animate the slider.
+          //     Animate the sliders.
           // Else (this is the first time the wheel is moved):
-          //     Animate the slider.
+          //     Animate the sliders.
 
           if (prevEvent) {
             if (

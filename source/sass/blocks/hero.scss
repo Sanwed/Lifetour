@@ -1,0 +1,392 @@
+.hero {
+  color: $color-default-white;
+}
+
+.hero__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__slider-slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  &--сaucasus {
+    background-image: url("../img/hero-bg-1-desktop.jpg");
+  }
+
+  &--kamchatka {
+    background-image: url("../img/hero-bg-2-desktop.jpg");
+  }
+
+  &--altai {
+    background-image: url("../img/hero-bg-3-desktop.jpg");
+  }
+
+  h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 77px;
+    font-weight: 800;
+    line-height: 77px;
+    margin: 0 0 25px;
+    max-width: 922px;
+  }
+
+  p {
+    max-width: 460px;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0 0 35px;
+  }
+
+  @include vp-1199 {
+    h2 {
+      font-size: 56px;
+      line-height: 56px;
+      margin: 0 0 15px;
+    }
+
+    p {
+      margin: 0 auto 25px;
+    }
+
+    &--сaucasus {
+      background-image: url("../img/hero-bg-1-tablet.jpg");
+    }
+
+    &--kamchatka {
+      background-image: url("../img/hero-bg-2-tablet.jpg");
+    }
+
+    &--altai {
+      background-image: url("../img/hero-bg-3-tablet.jpg");
+    }
+  }
+
+  @include vp-767 {
+    h2 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 20px;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+.hero__overlay {
+  padding: 182px 120px 80px;
+  background: $black-russian-gradient;
+
+  @include vp-1199 {
+    text-align: center;
+    padding: 174px 45px 170px;
+  }
+
+  @include vp-767 {
+    padding: 139px 15px 83px;
+  }
+}
+
+.hero__slider-slide--сaucasus .hero__button {
+  @include vp-1199 {
+    margin-bottom: 50px;
+  }
+}
+
+.hero__slider-slide--kamchatka .hero__button {
+  @include vp-1199 {
+    margin-bottom: 34px;
+  }
+}
+
+.hero__slider-slide--altai .hero__button {
+  @include vp-1199 {
+    margin-bottom: 69px;
+  }
+}
+
+.hero__button {
+  display: block;
+  color: $color-default-white;
+  width: 220px;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  background-color: #0266c1;
+  margin-bottom: 150px;
+
+  @include vp-1199 {
+    margin: 0 auto 50px;
+    width: 206px;
+  }
+
+  @include vp-767 {
+    width: 180px;
+    padding: 18px;
+  }
+}
+
+.hero__description {
+  display: flex;
+  gap: 10px;
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    gap: 8px;
+    padding: 14px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.hero__video {
+  position: absolute;
+  width: 482px;
+  height: 317px;
+  bottom: 182px;
+  right: 120px;
+
+  iframe {
+    position: absolute;
+    border: none;
+    top: 0;
+    left: 0;
+  }
+
+  @include vp-1199 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 442px;
+    height: 300px;
+
+    iframe {
+      width: 442px;
+      height: 300px;
+    }
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__video-preview {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__video-button {
+  @include center;
+  position: absolute;
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  top: calc(50% - 28px);
+  left: calc(50% - 28px);
+  border: 1px solid $color-default-white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero__slider .hero__slider-pagination {
+  position: absolute;
+  z-index: 1;
+  bottom: 98px;
+  right: 120px;
+  left: unset;
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  height: 10px;
+
+  @include vp-1199 {
+    bottom: 88px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+  }
+
+  @include vp-767 {
+    bottom: 40px;
+  }
+}
+
+.hero__slider-bullet {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+  cursor: pointer;
+
+  &--active {
+    background-color: $color-default-white;
+  }
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  bottom: 139px;
+  right: 120px;
+  width: 410px;
+  height: 459px;
+
+  @include vp-1199 {
+    position: static;
+    margin: 0 auto;
+    width: 442px;
+    height: 365px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__audio {
+  position: absolute;
+  width: 340px;
+  height: 220px;
+  bottom: 280px;
+  right: 120px;
+  color: #1c3374;
+  padding: 40px;
+  background-color: rgba(245, 246, 250, 0.9);
+
+  iframe {
+    display: none;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: 0 0 4px;
+    line-height: 22px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  @include vp-1199 {
+    position: static;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__audio-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  span {
+    color: rgba(28, 51, 116, 0.48);
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+
+.hero__audio-share {
+  display: flex;
+  gap: 14px;
+
+  button {
+    width: 17px;
+    height: 17px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.hero__audio-road-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  span {
+    font-size: 10px;
+    line-height: normal;
+    margin-top: 10px;
+  }
+}
+
+.hero__audio-road {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgba(28, 51, 116, 0.4);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 58%;
+    background-color: #1c3374;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: calc(58% - 8px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1c3374;
+  }
+}
+
+.hero__audio-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.hero__audio-play-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}

@@ -80,7 +80,8 @@
 }
 
 .hidden {
-  display: none;
+  /* stylelint-disable-next-line */
+  display: none !important;
 }
 
 .no-overflow {
