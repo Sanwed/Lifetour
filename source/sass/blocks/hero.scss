@@ -7,6 +7,12 @@
   overflow: hidden;
 }
 
+.hero__slide-wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .hero__slider-slide {
   position: relative;
   flex-shrink: 0;
@@ -48,7 +54,7 @@
     h2 {
       font-size: 56px;
       line-height: 56px;
-      margin: 0 0 15px;
+      margin: 0 auto 15px;
     }
 
     p {
@@ -124,7 +130,24 @@
   font-weight: 500;
   line-height: 16px;
   background-color: #0266c1;
+  border: 1px solid transparent;
   margin-bottom: 150px;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: #1c3374;
+    border: 1px solid #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    color: $color-default-white;
+  }
+
+  &--disabled {
+    background-color: rgba(2, 102, 193, 0.10);
+  }
 
   @include vp-1199 {
     margin: 0 auto 50px;
@@ -160,8 +183,8 @@
   position: absolute;
   width: 482px;
   height: 317px;
-  bottom: 182px;
-  right: 120px;
+  bottom: 104px;
+  right: 0;
 
   iframe {
     position: absolute;
@@ -206,22 +229,54 @@
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   cursor: pointer;
+
+  @include hover-focus {
+    outline: none;
+    background: none;
+    border: 1px solid #1c3374;
+
+    svg {
+      stroke: $color-default-black;
+      stroke-width: 1px;
+    }
+  }
+
+  &:active {
+    background-color: #1c3374;
+
+    svg {
+      stroke: none;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
 .hero__slider .hero__slider-pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    justify-content: center;
+  }
+}
+
+.hero__slider-pagination-wrapper {
   position: absolute;
   z-index: 1;
   bottom: 98px;
-  right: 120px;
-  left: unset;
-  display: flex;
-  gap: 15px;
-  width: max-content;
+  left: 0;
+  right: 0;
   height: 10px;
+
 
   @include vp-1199 {
     bottom: 88px;
-    margin: 0 auto;
     right: 0;
     left: 0;
   }
@@ -239,7 +294,17 @@
   border: 1px solid $color-default-white;
   cursor: pointer;
 
+  @include hover-focus {
+    outline: none;
+    border: 1px solid #1c3374;
+  }
+
+  &:active {
+    border: 1px solid $color-default-white;
+  }
+
   &--active {
+    pointer-events: none;
     background-color: $color-default-white;
   }
 
@@ -288,6 +353,21 @@
     line-height: 22px;
     text-align: left;
     font-weight: 400;
+  }
+
+  button {
+    @include hover-focus {
+      opacity: 0.8;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
   }
 
   @include vp-1199 {

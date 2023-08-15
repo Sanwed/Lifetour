@@ -16,7 +16,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-bottom: 14px;
+  max-width: 1440px;
+  margin: 0 auto 14px;
 
   @include vp-1199 {
     margin-bottom: 38px;

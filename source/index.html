@@ -59,41 +59,44 @@
         <div class="hero__slider-wrapper swiper-wrapper">
           <div class="hero__slider-slide hero__slider-slide--сaucasus">
             <div class="hero__overlay">
-              <h2>Захватывающие вершины Кавказа</h2>
-              <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход
-                на вершину горы Чегет.</p>
-              <a class="hero__button" href="#">Смотреть тур</a>
-              <div class="hero__video">
-                <div class="hero__video-preview" data-preview>
-                  <picture>
-                    <source media="(max-width: 1199px)"
-                      srcset="img/hero-video-tablet.jpg 1x, img/hero-video-tablet@2x.jpg 2x">
-                    <img src="img/hero-video-desktop.jpg" srcset="img/hero-video-desktop@2x.jpg 2x" alt="">
-                  </picture>
+              <div class="hero__slide-wrapper">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                  восход
+                  на вершину горы Чегет.</p>
+                <a class="hero__button" href="#">Смотреть тур</a>
+                <div class="hero__video">
+                  <div class="hero__video-preview" data-preview>
+                    <picture>
+                      <source media="(max-width: 1199px)"
+                        srcset="img/hero-video-tablet.jpg 1x, img/hero-video-tablet@2x.jpg 2x">
+                      <img src="img/hero-video-desktop.jpg" srcset="img/hero-video-desktop@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                  <iframe width="482" height="317"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen data-video></iframe>
+                  <button class="hero__video-button" data-video-play>
+                    <svg width="12" height="22">
+                      <use xlink:href="img/sprite.svg#hero-video-btn"></use>
+                    </svg>
+                  </button>
                 </div>
-                <iframe width="482" height="317"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen data-video></iframe>
-                <button class="hero__video-button" data-video-play>
-                  <svg width="12" height="22">
-                    <use xlink:href="img/sprite.svg#hero-video-btn"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="hero__description">
-                <p>
-                  <svg width="12" height="12">
-                    <use xlink:href="img/sprite.svg#moon"></use>
-                  </svg>
-                  6 дней/5 ночей
-                </p>
-                <p>
-                  <svg width="12" height="12">
-                    <use xlink:href="img/sprite.svg#level"></use>
-                  </svg>
-                  Высокая сложность
-                </p>
+                <div class="hero__description">
+                  <p>
+                    <svg width="12" height="12">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    6 дней/5 ночей
+                  </p>
+                  <p>
+                    <svg width="12" height="12">
+                      <use xlink:href="img/sprite.svg#level"></use>
+                    </svg>
+                    Высокая сложность
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -205,10 +208,382 @@
             </div>
           </div>
         </div>
-        <div class="hero__slider-pagination"></div>
+        <div class="hero__slider-pagination-wrapper">
+          <div class="hero__slider-pagination"></div>
+        </div>
       </div>
     </section>
-    <section class="tours" id="tours"></section>
+    <section class="tours" id="tours">
+      <div class="tours__wrapper">
+        <div class="tours__header">
+          <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__slider-nav">
+            <button class="tours__slider-arrow slider-arrow tours__slider-arrow--prev">
+              <svg width="14" height="8">
+                <use xlink:href="img/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+            <button class="tours__slider-arrow slider-arrow tours__slider-arrow--next">
+              <svg width="14" height="8">
+                <use xlink:href="img/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="tours__slider">
+          <div class="tours__slider-wrapper swiper-wrapper">
+            <div class="tours__slide tours__slide--caucasus">
+              <div class="tours__overlay">
+                <div class="tours__slide-description">
+                  <div class="tours__slide-wrapper">
+                  <span class="tours__slide-place">
+                    <svg width="9" height="12">
+                      <use xlink:href="img/sprite.svg#geo"></use>
+                    </svg>
+                    Кавказ
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                    4 дня
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    3 ночи
+                  </span>
+                  </div>
+                  <h3>Путешествие вокруг Эльбруса</h3>
+                  <div class="tours__slide-wrapper">
+                    <div class="tours__slide-info tours__slide-info--rating">
+                      <span>Сложность:</span>
+                      <div class="tours__slide-stars">
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Дата набора:</span>
+                      <b>12.06-19.06</b>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Группа:</span>
+                      <b>до 15 чел.</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide tours__slide--altai">
+              <div class="tours__overlay">
+                <div class="tours__slide-description">
+                  <div class="tours__slide-wrapper">
+                  <span class="tours__slide-place">
+                    <svg width="9" height="12">
+                      <use xlink:href="img/sprite.svg#geo"></use>
+                    </svg>
+                    Алтай
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                    14 дней
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    13 ночей
+                  </span>
+                  </div>
+                  <h3>Путь к подножию Белухи</h3>
+                  <div class="tours__slide-wrapper">
+                    <div class="tours__slide-info tours__slide-info--rating">
+                      <span>Сложность:</span>
+                      <div class="tours__slide-stars">
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Дата набора:</span>
+                      <b>14.06-23.06</b>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Группа:</span>
+                      <b>до 25 чел.</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide tours__slide--adygea">
+              <div class="tours__overlay">
+                <div class="tours__slide-description">
+                  <div class="tours__slide-wrapper">
+                  <span class="tours__slide-place">
+                    <svg width="9" height="12">
+                      <use xlink:href="img/sprite.svg#geo"></use>
+                    </svg>
+                    Адыгея
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                    7 дней
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    6 ночей
+                  </span>
+                  </div>
+                  <h3>Через Фишт к Черному морю</h3>
+                  <div class="tours__slide-wrapper">
+                    <div class="tours__slide-info tours__slide-info--rating">
+                      <span>Сложность:</span>
+                      <div class="tours__slide-stars">
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Дата набора:</span>
+                      <b>15.07-19.07</b>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Группа:</span>
+                      <b>до 22 чел.</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide tours__slide--caucasus">
+              <div class="tours__overlay">
+                <div class="tours__slide-description">
+                  <div class="tours__slide-wrapper">
+                  <span class="tours__slide-place">
+                    <svg width="9" height="12">
+                      <use xlink:href="img/sprite.svg#geo"></use>
+                    </svg>
+                    Кавказ
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                    4 дня
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    3 ночи
+                  </span>
+                  </div>
+                  <h3>Путешествие вокруг Эльбруса</h3>
+                  <div class="tours__slide-wrapper">
+                    <div class="tours__slide-info tours__slide-info--rating">
+                      <span>Сложность:</span>
+                      <div class="tours__slide-stars">
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Дата набора:</span>
+                      <b>12.06-19.06</b>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Группа:</span>
+                      <b>до 15 чел.</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide tours__slide--altai">
+              <div class="tours__overlay">
+                <div class="tours__slide-description">
+                  <div class="tours__slide-wrapper">
+                  <span class="tours__slide-place">
+                    <svg width="9" height="12">
+                      <use xlink:href="img/sprite.svg#geo"></use>
+                    </svg>
+                    Алтай
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                    14 дней
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    13 ночей
+                  </span>
+                  </div>
+                  <h3>Путь к подножию Белухи</h3>
+                  <div class="tours__slide-wrapper">
+                    <div class="tours__slide-info tours__slide-info--rating">
+                      <span>Сложность:</span>
+                      <div class="tours__slide-stars">
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Дата набора:</span>
+                      <b>14.06-23.06</b>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Группа:</span>
+                      <b>до 25 чел.</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide tours__slide--adygea">
+              <div class="tours__overlay">
+                <div class="tours__slide-description">
+                  <div class="tours__slide-wrapper">
+                  <span class="tours__slide-place">
+                    <svg width="9" height="12">
+                      <use xlink:href="img/sprite.svg#geo"></use>
+                    </svg>
+                    Адыгея
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                    7 дней
+                  </span>
+                    <span>
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#moon"></use>
+                    </svg>
+                    6 ночей
+                  </span>
+                  </div>
+                  <h3>Через Фишт к Черному морю</h3>
+                  <div class="tours__slide-wrapper">
+                    <div class="tours__slide-info tours__slide-info--rating">
+                      <span>Сложность:</span>
+                      <div class="tours__slide-stars">
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-full"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                        <svg width="15" height="14">
+                          <use xlink:href="img/sprite.svg#star-empty"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Дата набора:</span>
+                      <b>15.07-19.07</b>
+                    </div>
+                    <div class="tours__slide-info">
+                      <span>Группа:</span>
+                      <b>до 22 чел.</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="tours__link" href="#">
+          Показать все туры
+          <svg width="9" height="14">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
     <section class="study" id="study"></section>
     <section class="process"></section>
     <section class="about" id="about"></section>
