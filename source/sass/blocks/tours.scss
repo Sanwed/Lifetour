@@ -17,52 +17,18 @@
   margin-bottom: 54px;
 
   h2 {
-    position: relative;
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 35px;
+    @include title;
+
     margin: 0;
     flex-grow: 1;
-
-    &::before {
-      content: attr(data-title);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      opacity: 0.03;
-      font-size: 55px;
-      font-weight: 800;
-      line-height: 55px;
-    }
   }
 
   @include vp-1199 {
     margin-bottom: 38px;
-
-    h2 {
-      font-size: 25px;
-      line-height: 25px;
-
-      &::before {
-        font-size: 40px;
-        line-height: 40px;
-      }
-    }
   }
 
   @include vp-767 {
     margin-bottom: 24px;
-
-    h2 {
-      font-size: 22px;
-
-      &::before {
-        top: 0;
-        width: max-content;
-        font-size: 26px;
-        line-height: 26px;
-      }
-    }
   }
 }
 
@@ -70,14 +36,14 @@
   overflow: hidden;
   margin-bottom: 52px;
 
+  @include vp-1199 {
+    padding: 0 5px;
+  }
+
   @include vp-767 {
+    padding: 0;
     margin-bottom: 30px;
   }
-}
-
-.tours__slider-nav {
-  display: flex;
-  gap: 4px;
 }
 
 .tours__slide {
@@ -129,6 +95,7 @@
 .tours__overlay {
   background: $black-gradient;
   min-height: 412px;
+  height: 100%;
   padding: 20px;
   color: $color-default-white;
   display: flex;
@@ -175,8 +142,7 @@
   gap: 6px;
 
   @include vp-1199 {
-    max-width: 92px;
-    padding: 9px 16px;
+    padding: 9px 23px 9px 15px;
   }
 
   @include vp-767 {
@@ -234,6 +200,33 @@
   line-height: 16px;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+  color: $color-elephant;
+
+  svg {
+    stroke: $color-elephant;
+  }
+
+  @include hover-focus {
+    color: #1c3374;
+    outline: none;
+
+    svg {
+      stroke: #1c3374;
+    }
+  }
+
+  &:active {
+    color: #0266c1;
+
+    svg {
+      stroke: #0266c1;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.1;
+  }
 
   @include vp-767 {
     font-size: 14px;
@@ -244,6 +237,6 @@
 }
 
 .tours__wrapper {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }

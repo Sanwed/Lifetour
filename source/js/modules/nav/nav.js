@@ -1,4 +1,4 @@
-const body = document.body;
+const wrapper = document.querySelector('[data-page-wrapper]');
 const header = document.querySelector('[data-header]');
 const navBtn = document.querySelector('[data-nav="button"]');
 const nav = document.querySelector('[data-nav="nav"]');
@@ -8,7 +8,7 @@ const overlay = document.querySelector('[data-overlay]');
 
 const initNav = () => {
   navBtn.addEventListener('click', () => {
-    body.classList.toggle('overflow');
+    wrapper.classList.toggle('no-overflow');
     header.classList.toggle('light');
     nav.classList.toggle('is-opened');
     logo.classList.toggle('dark');

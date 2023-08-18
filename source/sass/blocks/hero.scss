@@ -9,7 +9,7 @@
 
 .hero__slide-wrapper {
   position: relative;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -183,7 +183,7 @@
   position: absolute;
   width: 482px;
   height: 317px;
-  bottom: 104px;
+  top: 120px;
   right: 0;
 
   iframe {
@@ -195,7 +195,7 @@
 
   @include vp-1199 {
     position: relative;
-    bottom: 0;
+    top: 0;
     right: 0;
     margin: 0 auto;
     width: 442px;
@@ -268,7 +268,7 @@
 
 .hero__slider-pagination-wrapper {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   bottom: 98px;
   left: 0;
   right: 0;
@@ -316,8 +316,8 @@
 
 .hero__image {
   position: absolute;
-  bottom: 139px;
-  right: 120px;
+  top: 20px;
+  right: 0;
   width: 410px;
   height: 459px;
 
@@ -337,8 +337,8 @@
   position: absolute;
   width: 340px;
   height: 220px;
-  bottom: 280px;
-  right: 120px;
+  top: 120px;
+  right: 0;
   color: #1c3374;
   padding: 40px;
   background-color: rgba(245, 246, 250, 0.9);

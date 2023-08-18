@@ -9,32 +9,5 @@
 }
 
 .social__link {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(45, 56, 63, 0.2);
-
-  @include center;
-
-  svg {
-    fill: $color-elephant;
-  }
-
-  @include hover-focus {
-    border: 1px solid $color-elephant;
-    outline: none;
-  }
-
-  &:active {
-    background-color: #0266c1;
-    border: none;
-
-    svg {
-      fill: $color-default-white;
-    }
-  }
-
-  &--disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
+  @include social-link(30px);
 }
