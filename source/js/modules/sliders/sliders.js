@@ -83,6 +83,7 @@ const initSliders = () => {
     slideClass: 'reviews__slide',
     slideVisibleClass: 'reviews__slide--visible',
     watchSlidesProgress: true,
+    slidesPerView: 'auto',
     navigation: {
       nextEl: '.reviews__slider-arrow--next',
       prevEl: '.reviews__slider-arrow--prev',
@@ -90,17 +91,14 @@ const initSliders = () => {
     breakpoints: {
       320: {
         allowTouchMove: true,
-        slidesPerView: 1,
       },
       768: {
         allowTouchMove: true,
-        slidesPerView: 1.2,
         spaceBetween: 30,
       },
       1200: {
         allowTouchMove: false,
         spaceBetween: 30,
-        slidesPerView: 1.5,
       },
     },
   });
@@ -109,32 +107,44 @@ const initSliders = () => {
     const advantagesSlider = new Swiper('.advantages__slider', {
       loop: true,
       loading: 'lazy',
-      watchOverflow: true,
       slideClass: 'advantages__slide',
       slideVisibleClass: 'advantages__slide--visible',
       watchSlidesProgress: true,
+      allowTouchMove: false,
+      spaceBetween: 30,
+      slidesPerView: 3,
       navigation: {
         nextEl: '.advantages__slider-arrow--next',
         prevEl: '.advantages__slider-arrow--prev',
       },
-      breakpoints: {
-        320: {
-          allowTouchMove: true,
-          slidesPerView: 1,
-        },
-        768: {
-          allowTouchMove: true,
-          slidesPerView: 1.2,
-          spaceBetween: 30,
-        },
-        1200: {
-          allowTouchMove: false,
-          spaceBetween: 30,
-          slidesPerView: 3,
-        },
-      },
     });
   }
+
+  const gallerySlider = new Swiper('.gallery__slider', {
+    loading: 'lazy',
+    slideClass: 'gallery__slide',
+    slideVisibleClass: 'gallery__slide--visible',
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.gallery__slider-arrow--next',
+      prevEl: '.gallery__slider-arrow--prev',
+    },
+    slidesPerView: 'auto',
+    breakpoints: {
+      320: {
+        allowTouchMove: true,
+        spaceBetween: 3,
+      },
+      768: {
+        allowTouchMove: true,
+        spaceBetween: 5,
+      },
+      1200: {
+        allowTouchMove: false,
+        spaceBetween: 5,
+      },
+    },
+  });
 };
 
 export {initSliders};

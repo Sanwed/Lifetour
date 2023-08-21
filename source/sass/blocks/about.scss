@@ -24,7 +24,7 @@
   position: relative;
   padding: 35px 120px 0 0;
   max-width: 705px;
-  margin-left: auto;
+  margin-left: 735px;
 
   h2 {
     @include title;
@@ -50,6 +50,7 @@
   @include vp-1199 {
     padding: 0;
     max-width: 325px;
+    margin-left: 400px;
 
     h2 {
       margin-bottom: 35px;
@@ -64,6 +65,7 @@
 
   @include vp-767 {
     padding: 0 15px;
+    margin: 0;
 
     h2 {
       margin-bottom: 32px;

@@ -66,13 +66,18 @@
   height: 253px;
   flex-shrink: 0;
 
+  img {
+    object-fit: cover;
+    object-position: top;
+  }
+
   @include vp-1199 {
     width: 186px;
     height: 237px;
   }
 
   @include vp-767 {
-    width: 250px;
+    width: 100%;
     height: 169px;
     margin-bottom: 17px;
   }
