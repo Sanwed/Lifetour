@@ -172,7 +172,7 @@
     width: 1440px;
     height: 1px;
     opacity: 0.2;
-    background-color: #0266c1;
+    background-color: $color-navy-blue;
   }
 
   @include vp-1199 {
@@ -199,7 +199,7 @@
       top: 20px;
       left: 11px;
       bottom: 20px;
-      background-color: #0266c1;
+      background-color: $color-navy-blue;
     }
   }
 }
@@ -213,7 +213,7 @@
 
   svg {
     flex-shrink: 0;
-    fill: #2d383f;
+    fill: $color-elephant;
   }
 
   p {
@@ -225,7 +225,7 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    background-color: #0266c1;
+    background-color: $color-navy-blue;
     bottom: -7px;
     left: 0;
     border-radius: 50%;
