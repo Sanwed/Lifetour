@@ -1,6 +1,12 @@
-@mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+@mixin retina() {
+  @media (min-resolution: 2dppx) {
     @content;
+  }
+}
+
+@mixin webp($image) {
+  @supports (background: url($image)) {
+    background-image: url($image);
   }
 }
 
@@ -28,10 +34,10 @@
   }
 
   &:active {
-    color: #0266c1;
+    color: $color-navy-blue;
 
     svg {
-      fill: #0266c1;
+      fill: $color-navy-blue;
     }
   }
 
@@ -118,7 +124,7 @@
   }
 
   &:active {
-    background-color: #0266c1;
+    background-color: $color-navy-blue;
     border: none;
 
     svg {

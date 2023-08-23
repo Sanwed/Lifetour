@@ -5,6 +5,7 @@
   h2 {
     width: max-content;
     margin: 0 auto 47px;
+
     @include title;
 
     &::before {
@@ -64,7 +65,7 @@
   flex-shrink: 0;
   max-width: 380px;
   padding: 40px 20px;
-  border: 1px solid rgba(2, 102, 193, 0.10);
+  border: 1px solid rgba(2, 102, 193, 0.1);
 
   @include vp-1199 {
     max-width: 324px;
@@ -80,12 +81,13 @@
 .advantages__image {
   width: 54px;
   height: 54px;
-  border: 1px solid #0266c1;
+  border: 1px solid $color-navy-blue;
+
   @include center;
   margin: 0 auto 30px;
 
   svg {
-    fill: #0266c1;
+    fill: $color-navy-blue;
   }
 
   @include vp-1199 {

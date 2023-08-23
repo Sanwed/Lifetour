@@ -13,7 +13,7 @@ const initNav = () => {
     nav.classList.toggle('is-opened');
     logo.classList.toggle('dark');
     phone.classList.toggle('dark');
-    overlay.classList.toggle('hidden');
+    overlay.classList.toggle('is-hidden');
   });
 };
 

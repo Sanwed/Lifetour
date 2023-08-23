@@ -4,8 +4,8 @@ const preview = document.querySelector('[data-preview]');
 
 const initVideo = () => {
   playBtn.addEventListener('click', () => {
-    preview.classList.add('hidden');
-    playBtn.classList.add('hidden');
+    preview.classList.add('is-hidden');
+    playBtn.classList.add('is-hidden');
     video.src = 'https://www.youtube.com/embed/9TZXsZItgdw?controls=0&autoplay=1';
   });
 };

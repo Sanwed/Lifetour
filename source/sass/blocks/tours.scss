@@ -55,14 +55,38 @@
 
   &--caucasus {
     background-image: url("../img/tour-1-desktop.jpg");
+
+    @include webp("../img/tour-1-desktop.webp");
+
+    @include retina {
+      background-image: url("../img/tour-1-desktop@2x.jpg");
+
+      @include webp("../img/tour-1-desktop@2x.webp");
+    }
   }
 
   &--altai {
     background-image: url("../img/tour-2-desktop.jpg");
+
+    @include webp("../img/tour-2-desktop.webp");
+
+    @include retina {
+      background-image: url("../img/tour-2-desktop@2x.jpg");
+
+      @include webp("../img/tour-2-desktop@2x.webp");
+    }
   }
 
   &--adygea {
     background-image: url("../img/tour-3-desktop.jpg");
+
+    @include webp("../img/tour-3-desktop.webp");
+
+    @include retina {
+      background-image: url("../img/tour-3-desktop@2x.jpg");
+
+      @include webp("../img/tour-3-desktop@2x.webp");
+    }
   }
 
   h3 {
@@ -80,14 +104,76 @@
   @include vp-1199 {
     &--caucasus {
       background-image: url("../img/tour-1-tablet.jpg");
+
+      @include webp("../img/tour-1-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/tour-1-tablet@2x.jpg");
+
+        @include webp("../img/tour-1-tablet@2x.webp");
+      }
     }
 
     &--altai {
       background-image: url("../img/tour-2-tablet.jpg");
+
+      @include webp("../img/tour-2-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/tour-2-tablet@2x.jpg");
+
+        @include webp("../img/tour-2-tablet@2x.webp");
+      }
     }
 
     &--adygea {
       background-image: url("../img/tour-3-tablet.jpg");
+
+      @include webp("../img/tour-3-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/tour-3-tablet@2x.jpg");
+
+        @include webp("../img/tour-3-tablet@2x.webp");
+      }
+    }
+  }
+
+  @include vp-767 {
+    &--caucasus {
+      background-image: url("../img/tour-1-mobile.jpg");
+
+      @include webp("../img/tour-1-mobile.webp");
+
+      @include retina {
+        background-image: url("../img/tour-1-mobile@2x.jpg");
+
+        @include webp("../img/tour-1-mobile@2x.webp");
+      }
+    }
+
+    &--altai {
+      background-image: url("../img/tour-2-mobile.jpg");
+
+      @include webp("../img/tour-2-mobile.webp");
+
+      @include retina {
+        background-image: url("../img/tour-2-mobile@2x.jpg");
+
+        @include webp("../img/tour-2-mobile@2x.webp");
+      }
+    }
+
+    &--adygea {
+      background-image: url("../img/tour-3-mobile.jpg");
+
+      @include webp("../img/tour-3-mobile.webp");
+
+      @include retina {
+        background-image: url("../img/tour-3-mobile@2x.jpg");
+
+        @include webp("../img/tour-3-mobile@2x.webp");
+      }
     }
   }
 }
@@ -137,7 +223,7 @@
 
 .tours__slide-wrapper .tours__slide-place {
   padding: 9px 24px;
-  background-color: #0266c1;
+  background-color: $color-navy-blue;
   max-width: 108px;
   gap: 6px;
 
@@ -216,10 +302,10 @@
   }
 
   &:active {
-    color: #0266c1;
+    color: $color-navy-blue;
 
     svg {
-      stroke: #0266c1;
+      stroke: $color-navy-blue;
     }
   }
 

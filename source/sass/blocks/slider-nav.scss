@@ -7,7 +7,7 @@
   display: block;
   width: 37px;
   height: 35px;
-  background-color: #0266c1;
+  background-color: $color-navy-blue;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -42,5 +42,4 @@
     pointer-events: none;
     opacity: 0.1;
   }
-
 }

@@ -23,14 +23,38 @@
 
   &--сaucasus {
     background-image: url("../img/hero-bg-1-desktop.jpg");
+
+    @include webp("../img/hero-bg-1-desktop.webp");
+
+    @include retina {
+      background-image: url("../img/hero-bg-1-desktop@2x.jpg");
+
+      @include webp("../img/hero-bg-1-desktop@2x.webp");
+    }
   }
 
   &--kamchatka {
     background-image: url("../img/hero-bg-2-desktop.jpg");
+
+    @include webp("../img/hero-bg-2-desktop.webp");
+
+    @include retina {
+      background-image: url("../img/hero-bg-2-desktop@2x.jpg");
+
+      @include webp("../img/hero-bg-2-desktop@2x.webp");
+    }
   }
 
   &--altai {
     background-image: url("../img/hero-bg-3-desktop.jpg");
+
+    @include webp("../img/hero-bg-3-desktop.webp");
+
+    @include retina {
+      background-image: url("../img/hero-bg-3-desktop@2x.jpg");
+
+      @include webp("../img/hero-bg-3-desktop@2x.webp");
+    }
   }
 
   h2 {
@@ -63,14 +87,38 @@
 
     &--сaucasus {
       background-image: url("../img/hero-bg-1-tablet.jpg");
+
+      @include webp("../img/hero-bg-1-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/hero-bg-1-tablet@2x.jpg");
+
+        @include webp("../img/hero-bg-1-tablet@2x.webp");
+      }
     }
 
     &--kamchatka {
       background-image: url("../img/hero-bg-2-tablet.jpg");
+
+      @include webp("../img/hero-bg-2-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/hero-bg-2-tablet@2x.jpg");
+
+        @include webp("../img/hero-bg-2-tablet@2x.webp");
+      }
     }
 
     &--altai {
       background-image: url("../img/hero-bg-3-tablet.jpg");
+
+      @include webp("../img/hero-bg-3-tablet.webp");
+
+      @include retina {
+        background-image: url("../img/hero-bg-3-tablet@2x.jpg");
+
+        @include webp("../img/hero-bg-3-tablet@2x.webp");
+      }
     }
   }
 
@@ -84,6 +132,42 @@
       font-size: 15px;
       line-height: 20px;
       margin: 0 auto 20px;
+    }
+
+    &--сaucasus {
+      background-image: url("../img/hero-bg-1-mobile.jpg");
+
+      @include webp("../img/hero-bg-1-mobile.webp");
+
+      @include retina {
+        background-image: url("../img/hero-bg-1-mobile@2x.jpg");
+
+        @include webp("../img/hero-bg-1-mobile@2x.webp");
+      }
+    }
+
+    &--kamchatka {
+      background-image: url("../img/hero-bg-2-mobile.jpg");
+
+      @include webp("../img/hero-bg-2-mobile.webp");
+
+      @include retina {
+        background-image: url("../img/hero-bg-2-mobile@2x.jpg");
+
+        @include webp("../img/hero-bg-2-mobile@2x.webp");
+      }
+    }
+
+    &--altai {
+      background-image: url("../img/hero-bg-3-mobile.jpg");
+
+      @include webp("../img/hero-bg-3-mobile.webp");
+
+      @include retina {
+        background-image: url("../img/hero-bg-3-tablet@2x.jpg");
+
+        @include webp("../img/hero-bg-3-tablet@2x.webp");
+      }
     }
   }
 }
@@ -129,7 +213,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  background-color: #0266c1;
+  background-color: $color-navy-blue;
   border: 1px solid transparent;
   margin-bottom: 150px;
 
@@ -146,7 +230,7 @@
   }
 
   &--disabled {
-    background-color: rgba(2, 102, 193, 0.10);
+    background-color: rgba(2, 102, 193, 0.1);
   }
 
   @include vp-1199 {
