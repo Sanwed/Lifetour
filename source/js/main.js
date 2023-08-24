@@ -13,11 +13,11 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   initNav();
-  initSliders();
-  initVideo();
-  initAudio();
 
   window.addEventListener('load', () => {
+    initSliders();
+    initVideo();
+    initAudio();
     initForm();
     initMap();
     const form = new Form();
