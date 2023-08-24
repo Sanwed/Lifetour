@@ -5,7 +5,7 @@ const initMap = () => {
     })
     .setView([55.81656, 37.63772], 16);
 
-  const layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  const layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
   map.addLayer(layer);
 
   const markerIcon = L.icon({
