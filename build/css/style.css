@@ -2657,7 +2657,7 @@ img {
 .contacts__contact a {
   color: #2d383f;
   font-size: 16px;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   margin: 0;
 }
 @media (max-width: 1199px) {
@@ -4787,40 +4787,3 @@ img {
     line-height: 14px;
   }
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/

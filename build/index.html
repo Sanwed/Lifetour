@@ -8,7 +8,7 @@
   <title>Lifetour</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/montserrat-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
@@ -16,6 +16,7 @@
   <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-800.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="img/hero-bg-1-desktop.webp" as="image" type="image/webp">
 </head>
 <body>
 <div class="wrapper">
@@ -81,7 +82,8 @@
                     <picture>
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/hero-video-tablet.webp 1x, img/hero-video-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/hero-video-desktop.webp 1x, img/hero-video-desktop@2x.webp">
+                      <source type="image/webp"
+                        srcset="img/hero-video-desktop.webp 1x, img/hero-video-desktop@2x.webp 2x">
                       <source media="(max-width: 1199px)"
                         srcset="img/hero-video-tablet.jpg 1x, img/hero-video-tablet@2x.jpg 2x">
                       <img src="img/hero-video-desktop.jpg" srcset="img/hero-video-desktop@2x.jpg 2x"
