@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   padding: 55px 0 100px;
 
   @include vp-1199 {
@@ -11,7 +12,6 @@
 }
 
 .about__wrapper {
-  position: relative;
   max-width: 1440px;
   margin: 0 auto;
 
@@ -49,7 +49,6 @@
 
   @include vp-1199 {
     padding: 0;
-    max-width: 325px;
     margin-left: 400px;
 
     h2 {
@@ -85,10 +84,10 @@
 
 .about__image {
   position: absolute;
-
+  left: 0;
 
   @include vp-1199 {
-    top: 7px;
+    top: 47px;
   }
 
   @include vp-767 {

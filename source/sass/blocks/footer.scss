@@ -15,7 +15,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
   max-width: 1200px;
   margin: 0 auto 14px;
 
@@ -58,16 +57,26 @@
 .footer__nav {
   margin-right: 65px;
 
+  @media (max-width: $vp-1280) {
+    margin: 0;
+  }
+
   @include vp-1199 {
     margin: 0;
   }
 }
 
 .footer__phone {
+  display: block;
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
   color: $color-elephant;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin: 0;
+  }
 
   @include header-items-states;
 

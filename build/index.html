@@ -58,11 +58,13 @@
           </li>
         </ul>
       </nav>
-      <a class="header__phone" href="tel:+78007253232" data-header-phone>8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+      <div class="header__phones-wrapper">
+        <a class="header__phone" href="tel:+78007253232" data-header-phone>8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <h1 class="visually-hidden">Путешествия</h1>
     <section class="hero">
       <div class="hero__slider">
@@ -266,13 +268,13 @@
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#sun"></use>
                     </svg>
-                    4 дня
+                    4&nbsp;дня
                   </span>
                     <span>
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#moon"></use>
                     </svg>
-                    3 ночи
+                    3&nbsp;ночи
                   </span>
                   </div>
                   <h3>Путешествие вокруг Эльбруса</h3>
@@ -323,13 +325,13 @@
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#sun"></use>
                     </svg>
-                    14 дней
+                    14&nbsp;дней
                   </span>
                     <span>
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#moon"></use>
                     </svg>
-                    13 ночей
+                    13&nbsp;ночей
                   </span>
                   </div>
                   <h3>Путь к&nbsp;подножию Белухи</h3>
@@ -380,13 +382,13 @@
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#sun"></use>
                     </svg>
-                    7 дней
+                    7&nbsp;дней
                   </span>
                     <span>
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#moon"></use>
                     </svg>
-                    6 ночей
+                    6&nbsp;ночей
                   </span>
                   </div>
                   <h3>Через Фишт к&nbsp;Черному морю</h3>
@@ -1237,11 +1239,12 @@
         <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
         <div class="consult__form" data-form-validate data-form>
           <form action="#" method="post">
-            <div class="consult__input" data-validate-type="text" data-limitation="name" data-required>
+            <div class="consult__input" data-validate-type="text" data-limitation="name" data-required
+              data-input-container>
               <label class="visually-hidden" for="name">Ваше имя</label>
               <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" data-input>
             </div>
-            <div class="consult__input" data-validate-type="phone" data-required>
+            <div class="consult__input" data-validate-type="phone" data-required data-input-container>
               <label class="visually-hidden" for="phone">Ваше имя</label>
               <input type="text" name="tel" id="phone" placeholder="Телефон" data-input>
             </div>
@@ -1301,7 +1304,7 @@
             <a class="nav-footer__link" href="#study">Обучение</a>
           </li>
           <li class="nav-footer__item">
-            <a class="nav-footer__link" href="#about">О нас</a>
+            <a class="nav-footer__link" href="#about">О&nbsp;нас</a>
           </li>
           <li class="nav-footer__item">
             <a class="nav-footer__link" href="#reviews">Отзывы</a>
@@ -1314,7 +1317,9 @@
           </li>
         </ul>
       </nav>
-      <a class="footer__phone" href="tel:+78007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+      <div class="footer__phones-wrapper">
+        <a class="footer__phone" href="tel:+78007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+      </div>
     </div>
     <ul class="footer__social social">
       <li class="social__item">

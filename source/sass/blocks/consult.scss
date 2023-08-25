@@ -20,11 +20,11 @@
     font-size: 35px;
     font-weight: 800;
     line-height: 35px;
-    margin: 0 0 20px;
+    margin: 0 20px 17px 0;
   }
 
   p {
-    margin: 0 0 38px;
+    margin: 0 16px 41px 0;
   }
 
   @include vp-1199 {
@@ -99,6 +99,10 @@
     &:active {
       outline: none;
       border: 1px solid #1c3374;
+
+      &::placeholder {
+        opacity: 0;
+      }
     }
 
     &:disabled {
@@ -108,6 +112,7 @@
     }
 
     &::placeholder {
+      transition: opacity 0.1s linear;
       color: $color-elephant;
       font-size: 16px;
       line-height: 16px;
@@ -159,7 +164,7 @@
 
   &.is-invalid {
     input {
-      border: 1px solid #ff121f;
+      background-color: #ff121f;
     }
   }
 }
@@ -175,6 +180,7 @@
   background-color: $color-navy-blue;
   line-height: 16px;
   cursor: pointer;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-default-white;

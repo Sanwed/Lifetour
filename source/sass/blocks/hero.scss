@@ -17,6 +17,7 @@
   position: relative;
   flex-shrink: 0;
   width: 100%;
+  background-color: #7c9bba;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -216,6 +217,7 @@
   background-color: $color-navy-blue;
   border: 1px solid transparent;
   margin-bottom: 150px;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-default-white;

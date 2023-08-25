@@ -8,8 +8,11 @@ const initAudio = () => {
     } else {
       audio.pause();
     }
-
   });
 };
 
-export {initAudio};
+const pauseAudio = () => {
+  audio.pause();
+};
+
+export {initAudio, pauseAudio};

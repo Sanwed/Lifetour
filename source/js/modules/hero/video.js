@@ -10,4 +10,10 @@ const initVideo = () => {
   });
 };
 
-export {initVideo};
+const disableVideo = () => {
+  preview.classList.remove('is-hidden');
+  playBtn.classList.remove('is-hidden');
+  video.src = '';
+}
+
+export {initVideo, disableVideo};

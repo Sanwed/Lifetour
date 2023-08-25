@@ -88,3 +88,8 @@
 .no-overflow {
   overflow: hidden;
 }
+
+.is-fixed {
+  /* stylelint-disable-next-line */
+  position: fixed !important;
+}
