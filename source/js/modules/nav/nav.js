@@ -6,6 +6,7 @@ const logo = document.querySelector('[data-logo]');
 const overlay = document.querySelector('[data-overlay]');
 
 const toggleNav = () => {
+  body.classList.toggle('no-overflow');
   header.classList.toggle('light');
   header.classList.toggle('is-fixed');
   nav.classList.toggle('is-opened');
