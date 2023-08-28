@@ -14,10 +14,24 @@ const initHero = () => {
   });
 
   const heroOverlays = document.querySelectorAll('.hero__overlay');
+  const breakpoints = {
+    mobile: window.matchMedia(`(min-width:320px)`),
+    tablet: window.matchMedia(`(min-width:768px)`),
+    desktop: window.matchMedia(`(min-width:1200px)`),
+  };
   setInterval(() => {
     const headerHeight = document.querySelector('[data-header]').clientHeight;
     heroOverlays.forEach((overlay) => {
-      overlay.style.paddingTop = `${headerHeight + 80}px`;
+      if (breakpoints.mobile.matches) {
+        overlay.style.paddingTop = `${headerHeight + 68}px`;
+      }
+      if (breakpoints.tablet.matches) {
+        overlay.style.paddingTop = `${headerHeight + 100}px`;
+      }
+      if (breakpoints.desktop.matches) {
+        overlay.style.paddingTop = `${headerHeight + 80}px`;
+      }
+
     });
   }, 1);
 };
