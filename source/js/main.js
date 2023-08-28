@@ -12,10 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   initNav();
+  initHero();
 
   window.addEventListener('load', () => {
     initSliders();
-    initHero();
     initForm();
     initMap();
     const form = new Form();

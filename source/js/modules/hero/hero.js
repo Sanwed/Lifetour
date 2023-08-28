@@ -12,6 +12,14 @@ const initHero = () => {
       pauseAudio();
     }
   });
+
+  const heroOverlays = document.querySelectorAll('.hero__overlay');
+  setInterval(() => {
+    const headerHeight = document.querySelector('[data-header]').clientHeight;
+    heroOverlays.forEach((overlay) => {
+      overlay.style.paddingTop = `${headerHeight + 80}px`;
+    });
+  }, 1);
 };
 
 export {initHero};

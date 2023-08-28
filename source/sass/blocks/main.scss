@@ -4,22 +4,22 @@
   background-size: 602px 1365px;
   background-position: 100% 782px;
   background-image: url("../img/clouds-1-desktop.png");
-  @include webp("../img/clouds-1-desktop.png");
+  @include webp("../img/clouds-1-desktop.webp");
 
   @include retina {
     background-image: url("../img/clouds-1-desktop@2x.png");
-    @include webp("../img/clouds-1-desktop@2x.png");
+    @include webp("../img/clouds-1-desktop@2x.webp");
   }
 
   @include vp-1199 {
     background-image: url("../img/clouds-1-tablet.png");
     background-size: 292px 1365px;
     background-position: 100% 928px;
-    @include webp("../img/clouds-1-tablet.png");
+    @include webp("../img/clouds-1-tablet.webp");
 
     @include retina {
       background-image: url("../img/clouds-1-tablet@2x.png");
-      @include webp("../img/clouds-1-tablet@2x.png");
+      @include webp("../img/clouds-1-tablet@2x.webp");
     }
   }
 
@@ -27,11 +27,11 @@
     background-size: 170px 595px;
     background-position: 100% 706px;
     background-image: url("../img/clouds-1-mobile.png");
-    @include webp("../img/clouds-1-mobile.png");
+    @include webp("../img/clouds-1-mobile.webp");
 
     @include retina {
       background-image: url("../img/clouds-1-mobile@2x.png");
-      @include webp("../img/clouds-1-mobile@2x.png");
+      @include webp("../img/clouds-1-mobile@2x.webp");
     }
   }
 }
