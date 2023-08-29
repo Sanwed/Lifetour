@@ -5,19 +5,16 @@ import {initSliders} from './modules/sliders/sliders.js';
 import {initForm} from './modules/forms/forms.js';
 import {initMap} from './modules/map/map.js';
 import {initHero} from './modules/hero/hero.js';
-import {deferCss} from './utils/defer-css.js';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
-
-  deferCss();
+  initSliders();
+  initNav();
+  initHero();
 
   window.addEventListener('load', () => {
-    initNav();
-    initHero();
-    initSliders();
     initForm();
     initMap();
     const form = new Form();
