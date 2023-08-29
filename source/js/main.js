@@ -11,10 +11,9 @@ import {initHero} from './modules/hero/hero.js';
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
-  initNav();
-  initHero();
-
   window.addEventListener('load', () => {
+    initNav();
+    initHero();
     initSliders();
     initForm();
     initMap();
