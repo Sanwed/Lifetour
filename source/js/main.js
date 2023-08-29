@@ -5,11 +5,14 @@ import {initSliders} from './modules/sliders/sliders.js';
 import {initForm} from './modules/forms/forms.js';
 import {initMap} from './modules/map/map.js';
 import {initHero} from './modules/hero/hero.js';
+import {deferCss} from './utils/defer-css.js';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
+
+  deferCss();
 
   window.addEventListener('load', () => {
     initNav();
