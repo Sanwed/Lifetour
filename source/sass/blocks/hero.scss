@@ -165,9 +165,9 @@
       @include webp("../img/hero-bg-3-mobile.webp");
 
       @include retina {
-        background-image: url("../img/hero-bg-3-tablet@2x.jpg");
+        background-image: url("../img/hero-bg-3-mobile@2x.jpg");
 
-        @include webp("../img/hero-bg-3-tablet@2x.webp");
+        @include webp("../img/hero-bg-3-mobile@2x.webp");
       }
     }
   }

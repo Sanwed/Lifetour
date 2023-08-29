@@ -2448,7 +2448,7 @@ img {
   }
 }
 .consult__input.is-invalid input {
-  background-color: #ff121f;
+  border: 1px solid #ff121f;
 }
 
 .consult__button {
@@ -3094,6 +3094,11 @@ img {
   }
 }
 @media (max-width: 767px) {
+  .gallery__header p {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
   .gallery__header {
     display: block;
     padding: 0 15px;
@@ -3383,11 +3388,11 @@ img {
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .hero__slider-slide--altai {
-    background-image: url("../img/hero-bg-3-tablet@2x.jpg");
+    background-image: url("../img/hero-bg-3-mobile@2x.jpg");
   }
-  @supports (background: url("../img/hero-bg-3-tablet@2x.webp")) {
+  @supports (background: url("../img/hero-bg-3-mobile@2x.webp")) {
     .hero__slider-slide--altai {
-      background-image: url("../img/hero-bg-3-tablet@2x.webp");
+      background-image: url("../img/hero-bg-3-mobile@2x.webp");
     }
   }
 }

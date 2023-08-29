@@ -57,6 +57,12 @@
   }
 
   @include vp-767 {
+    p {
+      margin: 0;
+    }
+  }
+
+  @include vp-767 {
     display: block;
     padding: 0 15px;
     margin-bottom: 14px;
