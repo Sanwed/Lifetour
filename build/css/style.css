@@ -3181,6 +3181,7 @@ img {
 }
 
 .hero__slider-slide {
+  visibility: hidden;
   position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -3189,6 +3190,9 @@ img {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+.hero__slider-slide--visible {
+  visibility: visible;
 }
 .hero__slider-slide--сaucasus {
   background-image: url("../img/hero-bg-1-desktop.jpg");
@@ -4128,9 +4132,7 @@ img {
 }
 
 .study__slide {
-  -webkit-transition: opacity 0.1s linear;
-  transition: opacity 0.1s linear;
-  opacity: 0;
+  visibility: hidden;
   border: 1px solid #ffffff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -4145,7 +4147,7 @@ img {
   margin: 0;
 }
 .study__slide--visible {
-  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1199px) {
   .study__slide {

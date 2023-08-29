@@ -5,6 +5,8 @@ const initSliders = () => {
     loading: 'lazy',
     speed: 300,
     watchOverflow: true,
+    watchSlidesProgress: true,
+    slideVisibleClass: 'hero__slider-slide--visible',
     slideClass: 'hero__slider-slide',
     pagination: {
       el: '.hero__slider-pagination',

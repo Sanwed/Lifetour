@@ -14,6 +14,7 @@
 }
 
 .hero__slider-slide {
+  visibility: hidden;
   position: relative;
   flex-shrink: 0;
   width: 100%;
@@ -21,6 +22,10 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+
+  &--visible {
+    visibility: visible;
+  }
 
   &--сaucasus {
     background-image: url("../img/hero-bg-1-desktop.jpg");

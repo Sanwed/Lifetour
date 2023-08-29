@@ -93,8 +93,7 @@
 }
 
 .study__slide {
-  transition: opacity 0.1s linear;
-  opacity: 0;
+  visibility: hidden;
   border: 1px solid $color-default-white;
   flex-shrink: 0;
   background: $color-default-white;
@@ -108,7 +107,7 @@
   }
 
   &--visible {
-    opacity: 1;
+    visibility: visible;
   }
 
   @include vp-1199 {
