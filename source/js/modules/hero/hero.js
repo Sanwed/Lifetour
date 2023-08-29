@@ -15,9 +15,9 @@ const initHero = () => {
 
   const heroOverlays = document.querySelectorAll('.hero__overlay');
   const breakpoints = {
-    mobile: window.matchMedia(`(min-width:320px)`),
-    tablet: window.matchMedia(`(min-width:768px)`),
-    desktop: window.matchMedia(`(min-width:1200px)`),
+    mobile: window.matchMedia('(min-width:320px)'),
+    tablet: window.matchMedia('(min-width:768px)'),
+    desktop: window.matchMedia('(min-width:1200px)'),
   };
   setInterval(() => {
     const headerHeight = document.querySelector('[data-header]').clientHeight;

@@ -36,7 +36,7 @@
 
     @include retina {
       background-image: url("../img/clouds-1-mobile@2x.png");
-      
+
       @include webp("../img/clouds-1-mobile@2x.webp");
     }
   }
