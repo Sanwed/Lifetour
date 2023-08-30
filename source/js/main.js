@@ -10,12 +10,12 @@ import {initHero} from './modules/hero/hero.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
-  initSliders();
   initNav();
   initHero();
 
   window.addEventListener('load', () => {
     initForm();
+    initSliders();
     initMap();
     const form = new Form();
     window.form = form;
