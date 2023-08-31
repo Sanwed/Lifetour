@@ -66,6 +66,12 @@
   }
 }
 
+.footer__phones-wrapper {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
 .footer__phone {
   display: block;
   font-size: 18px;
@@ -79,10 +85,6 @@
   }
 
   @include header-items-states;
-
-  @include vp-1199 {
-    display: none;
-  }
 }
 
 .footer__social {

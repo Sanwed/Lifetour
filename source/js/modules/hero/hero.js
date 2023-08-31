@@ -31,7 +31,6 @@ const initHero = () => {
       if (breakpoints.desktop.matches) {
         overlay.style.paddingTop = `${headerHeight + 80}px`;
       }
-
     });
   }, 1);
 };

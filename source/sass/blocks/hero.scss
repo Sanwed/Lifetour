@@ -246,7 +246,8 @@
   }
 
   @include vp-767 {
-    width: 180px;
+    width: unset;
+    margin: 0 55px 0;
     padding: 18px;
   }
 }
