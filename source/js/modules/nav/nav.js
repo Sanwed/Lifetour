@@ -1,4 +1,3 @@
-const body = document.body;
 const header = document.querySelector('[data-header]');
 const navBtn = document.querySelector('[data-nav="button"]');
 const nav = document.querySelector('[data-nav="nav"]');
@@ -6,9 +5,7 @@ const logo = document.querySelector('[data-logo]');
 const overlay = document.querySelector('[data-overlay]');
 
 const toggleNav = () => {
-  body.classList.toggle('no-overflow');
   header.classList.toggle('light');
-  header.classList.toggle('is-fixed');
   nav.classList.toggle('is-opened');
   logo.classList.toggle('dark');
   const phones = document.querySelectorAll('[data-header-phone]');

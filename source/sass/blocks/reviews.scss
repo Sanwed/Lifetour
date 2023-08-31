@@ -64,6 +64,7 @@
 
 .reviews__image {
   width: 258px;
+  height: 253px;
   flex-shrink: 0;
 
   img {
@@ -73,10 +74,12 @@
 
   @include vp-1199 {
     width: 186px;
+    height: 238px;
   }
 
   @include vp-767 {
     width: 100%;
+    height: auto;
     margin-bottom: 17px;
   }
 }

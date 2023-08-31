@@ -2158,15 +2158,6 @@ button,
   display: none !important;
 }
 
-.no-overflow {
-  overflow: hidden;
-}
-
-.is-fixed {
-  /* stylelint-disable-next-line */
-  position: fixed !important;
-}
-
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
@@ -4668,6 +4659,7 @@ img {
 
 .reviews__image {
   width: 258px;
+  height: 253px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -4680,11 +4672,13 @@ img {
 @media (max-width: 1199px) {
   .reviews__image {
     width: 186px;
+    height: 238px;
   }
 }
 @media (max-width: 767px) {
   .reviews__image {
     width: 100%;
+    height: auto;
     margin-bottom: 17px;
   }
 }
@@ -5301,6 +5295,11 @@ img {
   background-color: #0266c1;
   max-width: 108px;
   gap: 6px;
+}
+@media (max-width: 1300px) {
+  .tours__slide-wrapper .tours__slide-place {
+    padding: 9px;
+  }
 }
 @media (max-width: 1199px) {
   .tours__slide-wrapper .tours__slide-place {

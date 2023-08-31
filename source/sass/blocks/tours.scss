@@ -130,6 +130,10 @@
   max-width: 108px;
   gap: 6px;
 
+  @media (max-width: 1300px) {
+    padding: 9px;
+  }
+
   @include vp-1199 {
     padding: 9px 23px 9px 15px;
   }
